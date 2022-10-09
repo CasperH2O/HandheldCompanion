@@ -46,6 +46,14 @@ jobs:
     - name: Build Project
       run: msbuild $env:Solution_Name /p:Configuration=Release
 
+    # Build ControllerService solution
+    - name: Build Project
+      run: msbuild $env:Solution_Name /p:Configuration=Release
+
+    # Build ControllerService project
+    - name: Build Project
+      run: msbuild $env:Solution_Name /t:ControllerService /p:Configuration="Release"
+
     # Download Inno Setup
     - name: Download Inno Setup installer
       run: curl -L -o ./installer.exe http://files.jrsoftware.org/is/6/innosetup-${{ env.INNO_VERSION }}.exe
