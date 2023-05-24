@@ -560,7 +560,9 @@ namespace HandheldCompanion.Platforms
             // Todo: make this configurable ?
             SetProperty("OpenSensors", 1);
             SetProperty("MinimalizeSensors", 1);
-
+            SetProperty("ShowWelcomeAndProgress", 0);
+            SetProperty("AutoUpdateBetaDisable", 1);
+            
             try
             {
                 // set lock
