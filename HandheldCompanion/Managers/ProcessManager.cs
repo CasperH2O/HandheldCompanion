@@ -419,6 +419,8 @@ public static class ProcessManager
             case "asmultidisplaycontrol.exe":
             case "lockapp.exe":
             case "asusosd.exe":
+            case "steamwebhelper.exe":
+            case "dwm.exe":
                 return ProcessFilter.Desktop;
 
             default:
